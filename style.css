@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+#forecast {
+    margin-top: 100px;
+    margin-bottom: 40px;
+    border: 5px gray groove;
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: lightgray;
+}
+
+footer {
+    margin-top: 50px;
+    background-color: rgb(182, 189, 197);
+    width: 100%;
+    padding: 30px;
+    position: relative;
+    bottom: 0;
+}
+
+#description {
+    font-weight: normal;
+    text-transform: capitalize;
+    
+}
+
+.card {
+    text-align: center;
+    margin: 0;
+}
+
+#weekly {
+    display: flex;
+
+}
+
+#weekly .card {
+    margin: 0;
+    padding: 10px 0px;
+    text-transform: capitalize;
+}
+
+body {
+    background: rgb(190,190,190);
+    background: linear-gradient(90deg, rgba(190,190,190,1) 0%, rgba(255,255,255,1) 50%, rgba(190,190,190,1) 100%);
+    position: relative;
+}

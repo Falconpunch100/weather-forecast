@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"
+    integrity="sha512-quHCp3WbBNkwLfYUMd+KwBAgpVukJu5MncuQaWXgCrfgcxCJAq/fo+oqrRKOj+UKEmyMCG3tb8RB63W+EmrOBg=="
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+    integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ=="
+    crossorigin="anonymous" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"
+    integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww=="
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Weather Forecast</title>
+</head>
+
+<body>
+  <main class="ui container">
+    <header>
+      <nav>
+        <ul class="ui big breadcrumb">
+          <li class="section"><a href="./index.html">Home</a></li>
+          <li class="divider">/</li>
+          <li class="section"><a href="./citySearch.html">City Search</a></li>
+          <li class="divider">/</li>
+          <li class="section"><a href="./zipSearch.html">ZIP Search</a></li>
+          <li class="divider">/</li>
+          <li class="active section">Coordinate Search</li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <form class="ui form" autocomplete="off">
+      <div class="field">
+        <label>Latitude</label>
+        <input type="number" name="first-name" placeholder="Latitude" id="latSearch">
+      </div>
+      <div class="field">
+        <label>Longitude</label>
+        <input type="number" name="first-name" placeholder="Longitude" id="lonSearch">
+      </div>
+
+      <div class="inline fields">
+        <div class="field">
+          <div class="ui radio">
+            <input type="radio" name="temp" tabindex="0" value="kelvin">
+            <label>Kelvin</label>
+          </div>
+        </div>
+        <div class="field">
+          <div class="ui radio">
+            <input type="radio" name="temp" tabindex="0" value="imperial">
+            <label>Fahrenheit</label>
+          </div>
+        </div>
+        <div class="field">
+          <div class="ui radio">
+            <input type="radio" checked name="temp" tabindex="0" value="metric">
+            <label>Celsius</label>
+          </div>
+        </div>
+      </div>
+
+      <article id="forecast">
+        Enter the coordinates and select a temperature mode to check the forecast.
+      </article>
+
+      <section id="weekly">
+      </section>
+
+    </form>
+  </main>
+
+  <footer>
+    <div class="ui container">
+    <p>Created by Jordan Jubenville. @2020</p>
+  </div>
+  <script src="./app.js"></script>
+  <script src="./coordinateSearch.js"></script>
+</body>
+
+</html>
