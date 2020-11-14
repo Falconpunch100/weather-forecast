@@ -19,12 +19,12 @@ footer {
     padding: 30px;
     position: relative;
     bottom: 0;
+    opacity: 75%;
 }
 
 #description {
     font-weight: normal;
     text-transform: capitalize;
-    
 }
 
 .card {
@@ -34,7 +34,6 @@ footer {
 
 #weekly {
     display: flex;
-
 }
 
 #weekly .card {
@@ -47,4 +46,8 @@ body {
     background: rgb(190,190,190);
     background: linear-gradient(90deg, rgba(190,190,190,1) 0%, rgba(255,255,255,1) 50%, rgba(190,190,190,1) 100%);
     position: relative;
+}
+
+#welcome {
+    margin-top: 20px;
 }
